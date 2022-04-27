@@ -9,19 +9,36 @@
     <title> Cajero Atm</title>
 </head>
 <body>
-    <h1 class="titulo">Ingresa el valor a retirar!!!</h1>
-    <p> <img src="imagenes/cajero.png", class="imagen1"></p>
-    <input type="text", id="dinerito", class="dinerito1" />
-    <input type="button", value="retirar", id="botoncito", class="botoncito1"/>
-    <input type="button", value="Saldo", id="botoncito2", class="botoncito2"/>
-    <input type="button", value="borrar", id="botoncito3", class="botoncito3"/>
-    <br>
-    <input type="textarea" id="dentregado" , class="resultado"/>
-    <h2 class="subtitulo">Dividido por denominacion: </h2>
-    <p id="denominacion"></p>
-    <h3 class="subtitulo">Retire su dinero:</h3>
-    <p id="billeticos"></p>
-    
+    <div class="container">
+        <img class="banner" src="./imagenes/atm.png">
+        <div class="screen">
+            <div class="buttons"><input type="button", value="retirar", id="botoncito", class="botoncito1"/>
+                <input type="button", value="Saldo", id="botoncito2", class="botoncito2"/>
+                <input type="button", value="borrar", id="botoncito3", class="botoncito3"/>
+            </div>
+            <div class="screens"><input type="text", id="dinerito", class="dinerito1" />
+            <input type="textarea" id="dentregado" , class="resultado"/>
+            </div>
+        </div>
+        <div class="keyboard">
+            <button class="number" id="number1">1</button>
+            <button class="number" id="number2">2</button>
+            <button class="number" id="number3">3</button>
+            <button class="number" id="number4">4</button>
+            <button class="number" id="number5">5</button>
+            <button class="number" id="number6">6</button>
+            <button class="number" id="number7">7</button>
+            <button class="number" id="number8">8</button>
+            <button class="number" id="number9">9</button>
+            <button class="number" id="number*">*</button>
+            <button class="number" id="number0">0</button>
+            <button class="number" id="number#">#</button>
+        </div>
+        <h2 class="subtitulo">Dividido por denominacion: </h2>
+        <p id="denominacion"></p>
+        <h3 class="subtitulo">Retire su dinero:</h3>
+        <p id="billeticos"></p>
+    </div>
     <script src="js/codigo.js"></script>
 </body>
 </html>
