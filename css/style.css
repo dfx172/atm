@@ -1,6 +1,6 @@
 body {background-color: black; color: Red;}
 
-.container{background-color: rgba(32, 198, 210, 0.604);
+.container{background-color: rgb(29 38 17 / 60%);
     width: 340px;
     height: 600px;
     display: flex;
