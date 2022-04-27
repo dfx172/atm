@@ -81,7 +81,7 @@ else { for (var b of caja){
      console.log(caja);
      dentregadito.value = ("el dinero entregado total es " + dinerillo.value);
         for (var d of entregados) 
-            {denominacion.innerHTML += "la cantidad de billetes de "  +d.valor + " es de "+ d.cantidad + "<br>";}
+            {if (d.cantidad != 0) {denominacion.innerHTML += "la cantidad de billetes de "  +d.valor + " es de "+ d.cantidad + "<br>";}}
          for (var e of entregados) {for (var i = 0; i < e.cantidad; i++)
             {billetones.innerHTML += "<img src=" + e.imagen.src + " />" + " ";}
     }}}              
