@@ -1,7 +1,10 @@
 var imagenes=[];
+imagenes["100"] = "imagenes/billete100.png";
 imagenes["50"] = "imagenes/billete50.png";
 imagenes["20"] = "imagenes/billete20.png";
 imagenes["10"] = "imagenes/billete10.png";
+imagenes["5"] = "imagenes/billete05.png";
+imagenes["1"] = "imagenes/billete01.png";
 
 class billete {
     constructor(v,c)
@@ -14,9 +17,12 @@ class billete {
 }
 
 var caja = [];
-caja[0]=  (new billete (50,10));
-caja[1] = (new billete (20,5));
-caja[2] = (new billete (10,3));
+caja[0] = (new billete (100,10));
+caja[1]=  (new billete (50,10));
+caja[2] = (new billete (20,20));
+caja[3] = (new billete (10,30));
+caja[4] = (new billete (5,35));
+caja[5] = (new billete (1,40));
 
 document.addEventListener("keydown",teclaApretada);
 function teclaApretada(evento)
@@ -39,7 +45,7 @@ denominacion.innerHTML= "";
 billetones.innerHTML ="";
 var entregados = [];
 var dinero = parseInt(dinerillo.value);
-var saldo = ((caja[0].valor * caja[0].cantidad)+(caja[1].valor * caja[1].cantidad)+ (caja[2].valor* caja[2].cantidad));
+var saldo = ((caja[0].valor * caja[0].cantidad)+(caja[1].valor * caja[1].cantidad)+ (caja[2].valor* caja[2].cantidad)+ (caja[3].valor* caja[3].cantidad)+ (caja[4].valor* caja[4].cantidad)+ (caja[5].valor* caja[5].cantidad));
 if (dinero > saldo){dentregadito.value =("No tengo suficiente dinero, te quedaría faltando");}
 else if (dinero < 0) { dentregadito.value=("Cantidad seleccionada Erronea.")}
 else { for (var b of caja){
