@@ -1,12 +1,18 @@
-body {background-color: black; color: Red;}
+body {background-color: black; color: Red; display: flex;flex-direction: column;justify-content: center;align-items: center;}
 
 .container{background-color: rgb(29 38 17 / 60%);
-    width: 340px;
-    height: 600px;
+    width: 100%;
+    height: 91vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;}
+
+.home__icon-container{display: flex;justify-content: center;align-items: center;
+                        height: 8vh; width:100%;background-color: rgb(29 38 17 / 60%)}
+
+.home__icon{color: rgb(10, 10, 108);
+            text-align: end;}
 
 .banner{margin: 0;padding: 0;}
 

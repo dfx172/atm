@@ -88,7 +88,7 @@ else { for (var b of caja){
 
 
 function saldo(){
-    var saldo2 = ((caja[0].valor * caja[0].cantidad)+(caja[1].valor * caja[1].cantidad)+ (caja[2].valor* caja[2].cantidad));
+    var saldo2 = ((caja[0].valor * caja[0].cantidad)+(caja[1].valor * caja[1].cantidad)+ (caja[2].valor* caja[2].cantidad)+ (caja[3].valor* caja[3].cantidad)+ (caja[4].valor* caja[4].cantidad)+ (caja[5].valor* caja[5].cantidad));
     dentregadito.value= ("el dinero que tengo es de " + saldo2);
     dinerillo.value="";
     denominacion.innerHTML= "";
