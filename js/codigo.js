@@ -79,7 +79,7 @@ else { for (var b of caja){
              dinero = dinero - (b.valor*div);
              b.cantidad -= div;}}
      console.log(caja);
-     dentregadito.value = ("el dinero entregado total es " + dinerillo.value);
+     dentregadito.value = ("Te entregue: $" + dinerillo.value);
         for (var d of entregados) 
             {if (d.cantidad != 0) {denominacion.innerHTML += "la cantidad de billetes de "  +d.valor + " es de "+ d.cantidad + "<br>";}}
          for (var e of entregados) {for (var i = 0; i < e.cantidad; i++)
@@ -89,7 +89,7 @@ else { for (var b of caja){
 
 function saldo(){
     var saldo2 = ((caja[0].valor * caja[0].cantidad)+(caja[1].valor * caja[1].cantidad)+ (caja[2].valor* caja[2].cantidad)+ (caja[3].valor* caja[3].cantidad)+ (caja[4].valor* caja[4].cantidad)+ (caja[5].valor* caja[5].cantidad));
-    dentregadito.value= ("el dinero que tengo es de " + saldo2);
+    dentregadito.value= ("el saldo es " + saldo2);
     dinerillo.value="";
     denominacion.innerHTML= "";
     billetones.innerHTML ="";

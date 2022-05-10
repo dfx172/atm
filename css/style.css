@@ -11,8 +11,7 @@ body {background-color: black; color: Red; display: flex;flex-direction: column;
 .home__icon-container{display: flex;justify-content: center;align-items: center;
                         height: 8vh; width:100%;background-color: rgb(29 38 17 / 60%)}
 
-.home__icon{color: rgb(10, 10, 108);
-            text-align: end;}
+.home__icon{color: rgb(10, 10, 108);}
 
 .banner{margin: 0;padding: 0;}
 
@@ -29,7 +28,7 @@ border-radius: 10%;}
 
 .buttons{display: grid;
         margin-left: 4px;
-        gap: 24px;        }
+        gap: 24px;}
 
 .screens{display: grid;
             gap: 12px;
@@ -46,7 +45,8 @@ grid-template-columns: auto auto auto;}
 
 .number {
 font-weight: bold;
-border: 1px solid black;}
+border: 1px solid black;
+border-radius: 5%;}
 
 .number:hover{
 background-color: aqua;}
@@ -57,13 +57,13 @@ background-color: aqua;}
 
 .resultado{
     background-color: blue;
-    width: 100%;
+    width: 90%;
     height: 60px;
     margin-left: 7%;}
 
 .dinerito1 {
     margin-left: 7%;
-    width: 100%;
+    width: 80%;
     height: 25px;}
     
 .subtitulo {color:aqua}
