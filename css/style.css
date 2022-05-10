@@ -93,3 +93,48 @@ background-color: aqua;}
 .botoncito2:hover {background-color: purple;}
 .botoncito3:hover {background-color: black;color:white}
 
+.barra-footer{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+.login{height: 92vh;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;}
+
+.banner_2{margin-top: 180px;}
+
+.login__form{display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;}
+
+.label_2{color: rgb(30, 102, 158);}
+
+.user{text-align: center;border-radius: 10px;
+        padding: 3px;}
+
+.pass{text-align: center; border-radius: 10px;
+        padding: 3px;}
+
+.btn{text-decoration: none;
+    text-align: center;
+    border: 1px solid blue;
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+color:blue;}
+
+.showpass{display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;}
+.showpass i{font-size: 12px;
+        color: blue;}
+.showpass span{color: blue;}
+
+

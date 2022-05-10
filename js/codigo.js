@@ -1,10 +1,10 @@
 var imagenes=[];
-imagenes["100"] = "imagenes/billete100.png";
-imagenes["50"] = "imagenes/billete50.png";
-imagenes["20"] = "imagenes/billete20.png";
-imagenes["10"] = "imagenes/billete10.png";
-imagenes["5"] = "imagenes/billete05.png";
-imagenes["1"] = "imagenes/billete01.png";
+imagenes["100"] = "../imagenes/billete100.png";
+imagenes["50"] = "../imagenes/billete50.png";
+imagenes["20"] = "../imagenes/billete20.png";
+imagenes["10"] = "../imagenes/billete10.png";
+imagenes["5"] = "../imagenes/billete05.png";
+imagenes["1"] = "../imagenes/billete01.png";
 
 class billete {
     constructor(v,c)
@@ -107,3 +107,12 @@ function numero7(){dinerillo.value+=7;}
 function numero8(){dinerillo.value+=8;}
 function numero9(){dinerillo.value+=9;}
 function numero0(){dinerillo.value+=0;}
+
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
